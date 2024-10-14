@@ -111,6 +111,7 @@ stages {
          */
         sh """
           pwd
+          ll 
           docker build -t ${IMAGE} .
           docker tag ${IMAGE} christakisg4/${IMAGE}:${VERSION}
           docker login -u christakisg4 -p Sydney.1984
