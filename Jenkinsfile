@@ -106,7 +106,7 @@ stages {
         """
       }
     }
-  }
+}
 
 
   post {
@@ -117,4 +117,4 @@ stages {
           body: "Something is wrong with ${env.BUILD_URL}"
     }
   }
-//}
+}
