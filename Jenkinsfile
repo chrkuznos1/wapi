@@ -93,7 +93,7 @@ stages {
   steps {
     sh """ 
     pwd
-    sh 'll "${workspace}"'
+    echo "${workspace}"
     """
     //# cleanWs()
   }
