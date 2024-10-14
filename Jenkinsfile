@@ -89,10 +89,12 @@ pipeline {
     // }
 
 stages {
-    stage ('echo parameters') {
+    stage('echo parameters') {
   steps {
-    sh pwd
+    sh """ 
+    pwd
     sh echo "${workspace}"
+    """
     //# cleanWs()
   }
 }
