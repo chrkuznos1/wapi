@@ -27,9 +27,9 @@ pipeline {
 
   environment {
     //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
-    IMAGE = 'weather'
+    IMAGE='weather'
     //readMavenPom().getArtifactId()
-    VERSION = '1.0.1'
+    VERSION='1.0.1'
     //readMavenPom().getVersion()
   }
 
@@ -93,7 +93,7 @@ stages {
   steps {
     sh """ 
     pwd
-    sh echo "${workspace}"
+    sh 'll "${workspace}"'
     """
     //# cleanWs()
   }
