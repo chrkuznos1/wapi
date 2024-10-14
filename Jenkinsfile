@@ -29,7 +29,7 @@ pipeline {
     //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
     IMAGE = weather
     //readMavenPom().getArtifactId()
-    VERSION = 1.0.1 
+    VERSION = '1.0.1'
     //readMavenPom().getVersion()
   }
 
