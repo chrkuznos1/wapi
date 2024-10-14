@@ -9,7 +9,7 @@
 
 
 pipeline {
-
+  agent { }
   // /*
   //  * Run everything on an existing agent configured with a label 'docker'.
   //  * This agent will need docker, git and a jdk installed at a minimum.
@@ -27,7 +27,7 @@ pipeline {
 
   environment {
     //Use Pipeline Utility Steps plugin to read information from pom.xml into env variables
-    IMAGE = weather
+    IMAGE = 'weather'
     //readMavenPom().getArtifactId()
     VERSION = '1.0.1'
     //readMavenPom().getVersion()
@@ -87,7 +87,7 @@ pipeline {
     //     }
     //   }
     // }
-
+stages {
     stage('Build and Publish Image') {
       when {
         branch 'master'  //only run these steps on the master branch
@@ -107,6 +107,7 @@ pipeline {
       }
     }
   }
+
 
   post {
     failure {
