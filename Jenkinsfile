@@ -4,6 +4,7 @@ pipeline {
     stage( 'Build and Test' ) {
       steps {
         sh '''
+          pwd
           curl --version
         '''
       }
