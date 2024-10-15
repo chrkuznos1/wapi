@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage( 'Build and Test' ) {
       steps {
-        sh '''
+        //sh '''
           echo "test ok"
-        '''
+        //'''
       }
     }
   }
