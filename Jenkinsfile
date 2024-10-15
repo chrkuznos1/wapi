@@ -3,9 +3,10 @@ pipeline {
   stages {
     stage( 'Build and Test' ) {
       steps {
-        //sh '''
+        sh '''
+          sleep 20
           echo "test ok"
-        //'''
+        '''
       }
     }
   }
