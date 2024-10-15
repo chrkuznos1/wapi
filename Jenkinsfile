@@ -2,6 +2,9 @@ pipeline {
   agent { dockerfile true }
   stages {
     stage( 'Build and Test' ) {
+      environment {
+        HOME="."
+           }
       steps {
         sh '''
           pwd
