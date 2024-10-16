@@ -1,9 +1,9 @@
 pipeline {
   agent { dockerfile true }
-  environment {}
-  tools {
-    .NET SDK 'net_sdk_8'
-  }
+  // environment {}
+  // tools {
+  //   .NET SDK 'net_sdk_8'
+  // }
   stages {
     stage( 'Build and Test' ) {
       steps {
